@@ -195,3 +195,13 @@ Código: public class JulgamentoPrisioneiro {
 	}
 
 }
+
+// Quinta depuração
+
+Interpretação: Um erro de valores foi gerado no método cauculaPenaCondenacaoCumplices, o valor esperado era 1 porem o retornado foi 11 devido a variável com valor incorreto na classe JulgamentoPrisioneiro.
+
+Stacktrace: org.opentest4j.AssertionFailedError: expected: <1> but was: <11>
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+
+Correção: A variável de valor incorreto 'PENA_CONDENACAO_CUMPLICES = 11' foi redefinida para 'PENA_CONDENACAO_CUMPLICES = 1'
+
