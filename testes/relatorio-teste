@@ -75,3 +75,15 @@ class JulgamentoPrisioneiroTest {
 
 }
 
+// Primeira depuração
+
+Interpretação: Um erro de compilação referente ao código Java provido é gerado ao executar a JUnit. O erro foi gerado por conta da falta do parâmetro 'Resposta' (sendo passada uma classe como parâmetro ao invés de uma String).
+
+Stacktrace: java.lang.Error: Unresolved compilation problems: 
+	The method calculaPena(Resposta, Resposta) from the type JulgamentoPrisioneiro refers to the missing type Resposta
+	The method calculaPena(Resposta, Resposta) from the type JulgamentoPrisioneiro refers to the missing type Resposta
+	The method calculaPena(Resposta, Resposta) from the type JulgamentoPrisioneiro refers to the missing type Resposta
+	The method calculaPena(Resposta, Resposta) from the type JulgamentoPrisioneiro refers to the missing type Resposta
+
+Correcao: Na classe Java, foi alterado o parâmetro de input de 'calculaPena(Resposta prisioneiroA, Resposta prisioneiroB)' para 'calculaPena(String prisioneiroA, String prisioneiroB)' de acordo com o algoritmo primário fornecido no arquivo .docx.
+
