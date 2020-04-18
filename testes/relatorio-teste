@@ -117,7 +117,7 @@ Código: public class JulgamentoPrisioneiro {
 
 // Segunda depuração
 
-InterpretaçãoÇ Um erro de variáveis foi gerado durante os testes por conta do tipo de parâmetro passado no método 'calculaPena', String foram adicionadas no lugar do parâmetro 'Resposta', e o erro está sendo gerado porque está usando como parâmetro de correção tipos de variáveis que não existem.
+Interpretação: Um erro de variáveis foi gerado durante os testes por conta do tipo de parâmetro passado no método 'calculaPena', String foram adicionadas no lugar do parâmetro 'Resposta', e o erro está sendo gerado porque está usando como parâmetro de correção tipos de variáveis que não existem.
 
 Stacktrace: java.lang.Error: Unresolved compilation problems: 
 	Resposta cannot be resolved to a variable
@@ -151,3 +151,12 @@ Código: public class JulgamentoPrisioneiro {
 	}
 
 }
+
+// Terceira depuração
+
+Interpretação: Um erro de valores foi gerado no método cauculaPenaCondenacaoMutua, o valor esperado era 5 porem o retornado foi 15 devido a variável com valor incorreto na classe JulgamentoPrisioneiro.
+
+Stacktrace: org.opentest4j.AssertionFailedError: expected: <5> but was: <15>
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+
+Correção: A variável de valor incorreto 'PENA_CONDENACAO_MUTUA = 15' foi redefinida para 'PENA_CONDENACAO_MUTUA = 5'
